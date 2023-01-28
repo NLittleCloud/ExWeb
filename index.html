@@ -19,10 +19,10 @@
 				<div><a href="#"><img class = "headerpic" src="img/Logo.png" alt="На главную" width="99px" height="29px"></a></div>
 					<nav class = "headernav versionPc">
 						<ul class = "navul">
-							<li class = "linav"><a href="#">Трек-дни</a></li>
-							<li class = "linav"><a href="#">Сертификаты</a></li>
-							<li class = "linav"><a href="#">Как проходят заезды</a></li>
-							<li class = "linav">RU</li>
+							<li><a href="#">Трек-дни</a></li>
+							<li><a href="#">Сертификаты</a></li>
+							<li><a href="#">Как проходят заезды</a></li>
+							<li>RU</li>
 							<li class = "linav"><button class = "headerbt1"><img src="img/checkmark.svg" alt="Галочка"></button></li>
 						</ul>
 					</nav>
@@ -34,38 +34,35 @@
 		</header>
 		<main>
 			<section>
-				<div>
-					<!-- <div class = sec1h1>-->
-						<h1 class = sec1h1>
-							<p class = "p01">ТРЕК-ДНИ</p>
-							<p class = "p02">С READYONE</p>
-						</h1>
-					<!-- </div>-->
+				<div class = "sec1">
+					<h1 class = sec1h1>
+						<p class = "p01">ТРЕК-ДНИ</p>
+						<p class = "p02">С READYONE</p>
+					</h1>
 					<div class = "section1">
 						<img class = "sec1pic1" src="img/lines.svg" alt="картинка">
 						<p class = "p03">Не просто аренда спорткара, а настоящее погружение в мир автоспорта</p>
 					</div>
 					<button class = "sec1bt">ЗАКАЗАТЬ</button>
 				</div>
-				<img class = "sec1pic2" src="img/mouse.svg" alt="иконка мыши">
+				<img class = "sec1pic2 versionPc" src="img/mouse.svg" alt="иконка мыши">
 			</section>
 
 			<section>
-				<h1>Задание 2</h1> <!-- h1 или h2 -->
+				<h1 class = "sec2h1">Задание 2</h1> <!-- h1 или h2 -->
 				<form action="//httpbin.org/post" class="form-start" name="contact" method="POST" data-netlify="true">
 					<input type="hidden" name="form-name" value="contact">
-					<h2 class = "h2-2">User data</h2>
 					
-					<label>Telephone:<input type="text" placeholder="+7(XXX)-XX-XX" name="Telephone" required=""></label> <!-- type? -->
+					<label>Telephone:<input type="tel" placeholder="+7(XXX)-XX-XX" name="Telephone" required=""></label>
 					<label>File Name:<input type="text" placeholder="FILE NAME" name="File Name" required=""></label>
 
-					<p>Вид печати:</p>
+					<p class = "p04">Вид печати:</p>
 					<div class="formgender">
 						<label class = "labelgn">Цифровая<input type="radio" value="Цифровая" name="Печать"></label>
 						<label class = "labelgn">Офсетная<input type="radio" value="Офсетная" name="Печать"></label>
 					</div>
-					<button class="b01" type="submit">Send</button>
-					<button class="b01" type="reset">Remove form</button>
+					<button class="sec1bt" type="submit">Send</button>
+					<button class="sec1bt" type="reset">Remove form</button>
 				</form>
 			</section>
 		</main>

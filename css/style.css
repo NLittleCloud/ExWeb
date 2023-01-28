@@ -2,6 +2,7 @@
   --color-bg1: black;
   --color-text1: white;
   --color-text2: rgba(222, 19, 30, 1);
+	--color-plsce: rgb(245, 65, 74);
   
   font-size: 62.5%;
   font-weight: 700;
@@ -42,7 +43,39 @@ p{
 }
 
 .p03{
+	margin-left: 2.9rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 1.4;
+}
 
+.section1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.sec1bt{
+	font-size: 2rem;
+	line-height: 1.05;
+	background-color: var(--color-text2);
+	border: 0;
+	border-radius: 10px;
+	color: var( --color-text1);
+	padding: 0.86em 1.8em;
+	margin: 3.1rem auto;
+	margin-bottom: 10px;
+}
+
+.sec1{
+	display: flex;
+	flex-direction: column;
+}
+
+.sec1pic2{
+	margin: 0 auto;
+	margin-top: 7.3rem;
 }
 
 .header{
@@ -72,7 +105,7 @@ a{
 	color: var(--color-text1);
 }
 
-.linav{
+li{
 	margin-right: 60px;
 	list-style: none;
   text-align: center;
@@ -81,24 +114,115 @@ a{
 	line-height: 2.1;
 }
 
+.linav{
+	margin-right: 0;
+}
+
+
 .headerbt2, .headerbt1{
 	background: none;
 	border: none;
 }
+
+.p04{
+	font-size: 1.4rem;
+}
+
+label{
+	font-size: 1.4rem;
+}
+
+.sec2h1{
+	font-size: 2rem;
+}
+
+form input[type=text], input[type=tel]{
+  background-color: var(--color-plsce);
+  display: block; 
+  min-height: 5rem;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0 6em;
+	padding-left: 1em;
+  margin: 1.5rem; 
+}
+
+::placeholder {
+  color: var(--color-bg1);
+	font-size: 1.4rem;
+}
+
 
 
 @media (min-width: 800px){
 	body{
 		background-image: url("../img/pcBackground.png");
 	}
+
 	.versionPc{
 		display: block;
 	}
+
 	.headersocial{
 		display: none;
 	}
+
 	.headerpic{
 		width: 204px;
 		height: 59.28px;
 	}
+
+	.sec1{
+		flex-direction: row;
+    align-items: flex-end;
+	}
+	.header{
+		margin-bottom: 30.5rem;
+	}
+
+}
+
+@media (min-width: 1150px){
+	body{
+		background-image: url("../img/pcBackground.png");
+	}
+
+	.versionPc{
+		display: block;
+	}
+
+	.headersocial{
+		display: none;
+	}
+
+	.headerpic{
+		width: 204px;
+		height: 59.28px;
+	}
+
+	.sec1{
+		flex-direction: row;
+    align-items: flex-end;
+	}
+
+	.header{
+		margin-bottom: 50.5rem;
+	}
+
+	.p04{
+		font-size: 2rem;
+	}
+	
+	label{
+		font-size: 2rem;
+	}
+	
+	.sec2h1{
+		font-size: 4rem;
+	}
+
+	::placeholder {
+		font-size: 2rem;
+	}
+
 }
