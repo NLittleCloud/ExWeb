@@ -1,0 +1,104 @@
+:root{
+  --color-bg1: black;
+  --color-text1: white;
+  --color-text2: rgba(222, 19, 30, 1);
+  
+  font-size: 62.5%;
+  font-weight: 700;
+	font-family: 'Nunito', sans-serif; 
+	color: var(--color-text1);
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+body{
+	background-image: url("../img/mbBackground.png");
+	background-color: var(--color-bg1);
+	background-repeat : no-repeat;
+	background-size : 100%;
+}
+
+.sec1h1{
+	margin-top: 2rem;
+}
+
+p{
+	margin: 0;
+}
+
+.p01{
+	font-size: 2.4rem;
+	line-height: 2.1;
+}
+
+.p02{
+	color: var(--color-text2);
+	font-size: 4.8rem;
+	line-height: 1.08;
+}
+
+.p03{
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.2rem;
+  margin-top: 2.7rem;
+	margin-bottom: 19.4rem;
+}
+
+.versionPc{
+	display: none;
+}
+
+.navul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 85px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color-text1);
+}
+
+.linav{
+	margin-right: 60px;
+	list-style: none;
+  text-align: center;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2.1;
+}
+
+.headerbt2, .headerbt1{
+	background: none;
+	border: none;
+}
+
+
+@media (min-width: 800px){
+	body{
+		background-image: url("../img/pcBackground.png");
+	}
+	.versionPc{
+		display: block;
+	}
+	.headersocial{
+		display: none;
+	}
+	.headerpic{
+		width: 204px;
+		height: 59.28px;
+	}
+}

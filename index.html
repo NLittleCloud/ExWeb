@@ -13,11 +13,10 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class = "wrapper">
 		<header>
-			<div class = "header wrapper">
-				<div class = "headerleft">
-					<div><a href="#"><img class = "headerpic1" src="img/Logo.png" alt="На главную" width="99px" height="29px"></a></div>
+			<div class = "header">
+				<div><a href="#"><img class = "headerpic" src="img/Logo.png" alt="На главную" width="99px" height="29px"></a></div>
 					<nav class = "headernav versionPc">
 						<ul class = "navul">
 							<li class = "linav"><a href="#">Трек-дни</a></li>
@@ -27,7 +26,6 @@
 							<li class = "linav"><button class = "headerbt1"><img src="img/checkmark.svg" alt="Галочка"></button></li>
 						</ul>
 					</nav>
-				</div>
 				<div class = "headersocial">
 					<button class = "headerbt2"><img src="img/iconLanguage.svg" alt="Язык"></button>
 					<button class = "headerbt2"><img src="img/iconMenu.svg" alt="Меню"></button>
@@ -35,24 +33,24 @@
 			</div>
 		</header>
 		<main>
-			<section class = "">
+			<section>
 				<div>
-					<div>
-						<h1 class = "h1-1">
-							<p>ТРЕК-ДНИ</p>
-							<p>С READYONE</p>
+					<!-- <div class = sec1h1>-->
+						<h1 class = sec1h1>
+							<p class = "p01">ТРЕК-ДНИ</p>
+							<p class = "p02">С READYONE</p>
 						</h1>
-					</div>
+					<!-- </div>-->
 					<div class = "section1">
 						<img class = "sec1pic1" src="img/lines.svg" alt="картинка">
-						<p>Не просто аренда спорткара, а настоящее погружение в мир автоспорта</p>
+						<p class = "p03">Не просто аренда спорткара, а настоящее погружение в мир автоспорта</p>
 					</div>
 					<button class = "sec1bt">ЗАКАЗАТЬ</button>
 				</div>
 				<img class = "sec1pic2" src="img/mouse.svg" alt="иконка мыши">
 			</section>
 
-			<section class = "">
+			<section>
 				<h1>Задание 2</h1> <!-- h1 или h2 -->
 				<form action="//httpbin.org/post" class="form-start" name="contact" method="POST" data-netlify="true">
 					<input type="hidden" name="form-name" value="contact">
@@ -62,12 +60,12 @@
 					<label>File Name:<input type="text" placeholder="FILE NAME" name="File Name" required=""></label>
 
 					<p>Вид печати:</p>
-          <div class="formgender">
-            <label class = "labelgn">Цифровая<input type="radio" value="Цифровая" name="Печать"></label>
-            <label class = "labelgn">Офсетная<input type="radio" value="Офсетная" name="Печать"></label>
-          </div>
-          <button class="b01" type="submit">Send</button>
-          <button class="b01" type="reset">Remove form</button>
+					<div class="formgender">
+						<label class = "labelgn">Цифровая<input type="radio" value="Цифровая" name="Печать"></label>
+						<label class = "labelgn">Офсетная<input type="radio" value="Офсетная" name="Печать"></label>
+					</div>
+					<button class="b01" type="submit">Send</button>
+					<button class="b01" type="reset">Remove form</button>
 				</form>
 			</section>
 		</main>
